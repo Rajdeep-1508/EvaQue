@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EvaQue | Home</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav >
+            <h1 id="logo">
+                <a href="#"><img src="../media/logo.jpg" id="logo_navigation" height="40px"></a>
+            </h1>
+            
+            <ul id="navigations">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./login.html">login</a></li>
+            </ul>
+    </nav>
+    
+    <!-- main elements -->
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="wrapper">
+            <div class="title-text">
+          <div class="title login">Login Here</div>
+          <div class="title signup">Signup Now !</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="#" class="login">
+                <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+            </form>
+            <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+              <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup">
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+          const loginForm = document.querySelector("form.login");
+          const loginBtn = document.querySelector("label.login");
+          const signupBtn = document.querySelector("label.signup");
+          const signupLink = document.querySelector("form .signup-link a");
+          signupBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+          });
+          loginBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+          });
+          signupLink.onclick = (()=>{
+            signupBtn.click();
+            return false;
+          });
+    
+    </script>
+    
+    <!-- footer elements -->
+    <footer>
+        <a href="./index.html"><img src="../media/logo.jpg" id="logo_footer" height="100px"></a>
+        <p>Copyright &copy 2022 EvaQue India</p>
+        <h1>
+            <a href="#facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#google"><i class="bi bi-google"></i></a>
+            <a href="#github"><i class="bi bi-github"></i></a>
+        </h1>
+        <p>All rights are reserved</p>
+        <p>Developed & Maintained by-</p>
+        <a href="https://github.com/souryasaha1234" target="_blank">@Sourya Saha</a>
+        <a href="https://github.com/SouvikRay96" target="_blank">@Souvik Ray</a>
+        <a href="https://github.com/Rajdeep-1508" target="_blank">@Rajdeep Maulik</a>
+        <a href="#">@Sumona Dutta</a>
+        <br>
+    </footer>
+    <script src="../static/script1.js"></script>
+</body>
+</html>
