@@ -170,6 +170,9 @@ footer{
   padding: 10px;
 }
 #aboutUs{
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: normal;
+  text-transform: none;
   margin: 60px;
   background-color: rgba(189, 187, 214, 0.9);
   padding: 20px;
