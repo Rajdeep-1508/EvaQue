@@ -5,26 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>EvaQue | About</title>	
+	<title>
+        EvaQue | About
+        
+    </title>
+    <link rel="icon" type="image/png" href="../media/favicon.png">	
     <style>
         body{
-              background-image: linear-gradient(45deg, rgb(104, 90, 166), rgb(255, 122, 89));
+            background-image: linear-gradient(45deg, rgb(104, 90, 166), rgb(198, 128, 67));
         }
         label{
             padding-left: 40px;
         }
         input{
             background-color: white;
+            margin-left: 40px;
+        }
+        h1{
+            font-size: 1.5cm;
+            padding: 20px;
+            /* margin-right:30px;
+            margin-left: 30px; */
+            box-shadow: 0px 0px 10px black;
+            border: solid;
+            width:fit-content;
+            margin: auto;
+            background-image: linear-gradient(-45deg, rgb(104, 90, 166), rgb(198, 128, 67));
+        }
+        div{
+            background: url('img/red_transparent_background.png');
+            background: linear-gradient( 30deg,royalblue, rgb(255,229,180));
+            padding: 10px;
+            border: 10px;
+            width: auto;
+            font-size: 0.8cm;
+            border:solid;
+            margin-right:30px;
             margin-left: 30px;
+            border-radius: 10px;
+        }
+         input[type=radio] {
+            transform: scale(1.5);
+        } 
+        button{
+            background-color: #010204; /* Green */
+            border: outset;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            /* display: inline-block; */
+            font-size: 24px;
+            margin-left: 1300px;
         }
     </style>
 </head>
 
 <body>
-	<h1>
-		Quiz
+	<h1 align ="center">
+		Quiz::Beginners
 	</h1>
-
+    <br>
+    <br>
+    <div>
 	<h4>
         1) The Smallest Individual Unit of Python?
 	</h4>
@@ -32,9 +74,11 @@
     <input type="radio" id="Keywords" name="Unit" value="Keywords"><label for="Keywords">Keywords</label><br>
     <input type="radio" id="Token" name="Unit" value="Token"><label for="Token">Token</label><br>
     <input type="radio" id="Literals" name="Unit" value="Literals"><label for="Literals">Literals</label>
-
+    <br>
+    </div>
     <br>
     <br>
+    <div>
     <h4>
         2) Which of the following is/are valid Identifier?
     </h4>
@@ -43,7 +87,11 @@
     <input type="radio" id="abc" name="valid" value="abc12"><label for="abc">abc12</label><br>
     <input type="radio" id="All" name="valid" value="All"><label for="All">All of the above</label>
     <br>
+    </div>
     <br>
+    <br>
+
+    <div>
     <h4>
         3) Function used to get the length of the string
     </h4>       
@@ -52,7 +100,10 @@
     <input type="radio" id="strlen" name="length" value="strlen"><label for="strlen">strlen()</label><br>
     <input type="radio" id="none" name="length" value="none"><label for="none">None of these</label>
     <br>
+    </div>
     <br>
+    <br>
+    <div>
     <h4>
         4) What is the special Literal below?
     </h4>       
@@ -61,7 +112,10 @@
     <input type="radio" id="None" name="Literal" value="None"><label for="None">None</label><br>
     <input type="radio" id="both" name="Literal" value="both"><label for="both">Both (a) and (b)</label>
     <br>
+    </div>
     <br>
+    <br>
+    <div>
     <h4>
         5) Which one of the following are advantages of Python?
     </h4>       
@@ -69,11 +123,17 @@
     <input type="radio" id="inter" name="adv" value="inter"><label for="inter">Interpreted Language</label><br>
     <input type="radio" id="cross" name="adv" value="cross"><label for="cross">Cross-Platform Language</label><br>
     <input type="radio" id="all" name="adv" value="all"><label for="all">All of the above</label>
-		
+    <br>
+    </div>
     <br>
     <br>
     <br>
-    <button type="submit" value="Submit">Submit</button>
+    <button type="button" align="right">Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>					
