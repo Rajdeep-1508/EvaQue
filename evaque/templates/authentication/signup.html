@@ -1,0 +1,45 @@
+{% include "authentication/header.html" %}
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- main Element -->
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <h1 id="signuph1" align = "center">Sign Up</h1>
+            <hr id="hrline">
+            <p><b>*Please fill in this form to create an account.</b></p>
+            <label for="email"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" required>
+
+            <label for="email"><b>First Name</b></label>
+            <input type="text" placeholder="Enter FirstName" name="firstname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Address" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass1" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="pass2" required>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <a href="{% url 'login' %}"><button  type="button" class="cancelbtn">Cancel</button></a>
+                <button  type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    <!-- footer elements -->
+    {% include "authentication/footer.html" %}

@@ -21,7 +21,11 @@
             <ul id="navigations">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'login' %}">login</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">LogOut</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">login</a></li>
+                {% endif %}
             </ul>
     </nav>
     

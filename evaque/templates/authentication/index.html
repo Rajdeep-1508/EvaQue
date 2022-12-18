@@ -1,27 +1,59 @@
 {% include "authentication/header.html" %}
 
 <!-- main elements -->
-
+    
     <section id="_1">
-        <!-- <h1>Scroll Down</h1> -->
-    <a href="./form.html">
-        <div class="levels">
-            <h1>Beginner</h1>
-        </div>
-    </a>
-    <a href="#">
-        <div class="levels">
-            <h1>Intermediate</h1>
-        </div>
-    </a>
-    <a href="#">
-        <div class="levels">
-            <h1>Professional</h1>
-        </div>
-    </a>
+        <!--
+         <h1>Scroll Down</h1> -->
+    {% if user.is_authenticated %}
+        <h3>Hello {{fname}}</h3>
+        <h4>You'r successfully Logged In.</h4>
         <br>
+    {% else %}
+        <h3>Please Login or Register urself</h3>
         <br>
-        <br>
+    {% endif %}
+    
+    {% if user.is_authenticated %}
+        <a href="{% url 'begform' %}">
+            <div class="levels">
+                <h1>Beginner</h1>
+            </div>
+        </a>
+        <a href="{% url 'begform' %}">
+            <div class="levels">
+                <h1>Intermediate</h1>
+            </div>
+        </a>
+        <a href="{% url 'begform' %}">
+            <div class="levels">
+                <h1>Professional</h1>
+            </div>
+        </a>
+            <br>
+            <br>
+            <br>
+    {% else %}
+        <a href="{% url 'login' %}">
+            <div class="levels">
+                <h1>Beginner</h1>
+            </div>
+        </a>
+        <a href="{% url 'login' %}">
+            <div class="levels">
+                <h1>Intermediate</h1>
+            </div>
+        </a>
+        <a href="{% url 'login' %}">
+            <div class="levels">
+                <h1>Professional</h1>
+            </div>
+        </a>
+            <br>
+            <br>
+            <br>    
+    {% endif %}
+
     </section>
     
 {% include "authentication/footer.html" %}
