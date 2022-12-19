@@ -1,17 +1,26 @@
 {% include "authentication/header.html" %}
 
 <!-- main elements -->
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <section id="_1">
         <!--
          <h1>Scroll Down</h1> -->
     {% if user.is_authenticated %}
-        <h3>Hello {{fname}}</h3>
+        {% comment %} <h3>Hello {{fname}}</h3>
         <h4>You'r successfully Logged In.</h4>
-        <br>
+        <br> {% endcomment %}
+        <script>
+            swal({
+                title: "Welcome {{fname}}",
+                text: "You'r successfully Logged in to your account",
+                icon: "success",
+                button: "OK",
+              });
+        </script>
     {% else %}
-        <h3>Please Login or Register urself</h3>
-        <br>
+    <script>
+        swal("Please Login to Give The Exam");
+    </script>
     {% endif %}
     
     {% if user.is_authenticated %}
