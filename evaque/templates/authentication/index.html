@@ -18,9 +18,25 @@
               });
         </script>
     {% else %}
-    <script>
-        swal("Please Login to Give The Exam");
-    </script>
+        {% if messages %}
+            <!-- {% comment %} <script>
+                swal({
+                    title: "Good Bye",
+                    text: {{msg}},
+                    icon: "success",
+                    button: "OK",
+                })
+            </script> {% endcomment %} -->
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <script>
+                swal("Please Login to Give The Exam");
+            </script>
+        {% endif %}
     {% endif %}
     
     {% if user.is_authenticated %}
