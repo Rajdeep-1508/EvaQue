@@ -9,8 +9,29 @@
         <h3>Hello {{fname}}</h3>
         <h4>You'r successfully Logged In.</h4>
         <br>
-    {% else %}
-        <h3>Please Login or Register urself</h3>
+    {% else %}         
+        <div id="my_modal">
+            <i class="bi bi-arrow-up" style="padding-left: 760px; font-size: 50px;"></i>
+            <br>
+            <h1>Please Login or Register yourself to continue</h1>
+        </div>
+          <script>
+                var my_modal = document.getElementById('my_modal');
+                // now show automatically after 1s
+                // working
+                for(let i=0; i<200; i++){
+                    setInterval(showModal,4000) // 4000ms
+                    // now close 
+                    setInterval(closeModal,5000) // 5000ms
+                }
+
+            function showModal(){
+                my_modal.style.display = "block";
+            }
+            function closeModal(){
+                my_modal.style.display = "none";
+            }
+          </script>
         <br>
     {% endif %}
     
