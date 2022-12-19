@@ -5,130 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-        EvaQue | About
-        
+    <title>
+        EvaQue | Quiz
+
     </title>
-    <link rel="icon" type="image/png" href="../media/favicon.png">	
-    <style>
-        body{
-            background-image: linear-gradient(45deg, rgb(104, 90, 166), rgb(198, 128, 67));
-        }
-        label{
-            padding-left: 40px;
-        }
-        input{
-            background-color: white;
-            margin-left: 40px;
-        }
-        h1{
-            font-size: 1.5cm;
-            padding: 20px;
-            /* margin-right:30px;
-            margin-left: 30px; */
-            box-shadow: 0px 0px 10px black;
-            border: solid;
-            width:fit-content;
-            margin: auto;
-            background-image: linear-gradient(-45deg, rgb(104, 90, 166), rgb(198, 128, 67));
-        }
-        div{
-            background: url('img/red_transparent_background.png');
-            background: linear-gradient( 30deg,royalblue, rgb(255,229,180));
-            padding: 10px;
-            border: 10px;
-            width: auto;
-            font-size: 0.8cm;
-            border:solid;
-            margin-right:30px;
-            margin-left: 30px;
-            border-radius: 10px;
-        }
-         input[type=radio] {
-            transform: scale(1.5);
-        } 
-        button{
-            background-color: #010204; /* Green */
-            border: outset;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            /* display: inline-block; */
-            font-size: 24px;
-            margin-left: 1300px;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="../media/favicon.png">
+    <link rel="stylesheet" href="../static/formsStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type='text/javascript'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('label').click(function () {
+                $('label').removeClass('worngans');
+                $(this).addClass('worngans');
+            });
+        });
+    </script>
 </head>
 
 <body>
-	<h1 align ="center">
-		Quiz::Beginners
-	</h1>
+    <h1 class="font-effect-shadow-multiple" align="center">
+        Quiz::Beginners
+    </h1>
     <br>
     <br>
     <div>
-	<h4>
-        1) The Smallest Individual Unit of Python?
-	</h4>
-	<input type="radio" id="Identifier" name="Unit" value="Identifier"><label for="Identifier">Identifier</label><br>
-    <input type="radio" id="Keywords" name="Unit" value="Keywords"><label for="Keywords">Keywords</label><br>
-    <input type="radio" id="Token" name="Unit" value="Token"><label for="Token">Token</label><br>
-    <input type="radio" id="Literals" name="Unit" value="Literals"><label for="Literals">Literals</label>
-    <br>
+        <h4>
+            1) The Smallest Individual Unit of Python?
+        </h4>
+        <input type="radio" name="Unit" value="Identifier"><label>Identifier</label>
+        <input type="radio" name="Unit" value="Keywords"><label>Keywords</label><br>
+        <input type="radio" id="token" name="Unit" value="Token"><label for="token">Token</label>
+        <input type="radio" name="Unit" value="Literals"><label>Literals</label>
+        <br>
     </div>
     <br>
     <br>
     <div>
-    <h4>
-        2) Which of the following is/are valid Identifier?
-    </h4>
-    <input type="radio" id="myfile" name="valid" value="myfile"><label for="myfile">Myfile_</label><br>
-    <input type="radio" id="ds" name="valid" value="ds"><label for="ds">_DS</label><br>
-    <input type="radio" id="abc" name="valid" value="abc12"><label for="abc">abc12</label><br>
-    <input type="radio" id="All" name="valid" value="All"><label for="All">All of the above</label>
-    <br>
+        <h4>
+            2) Which of the following is/are valid Identifier?
+        </h4>
+        <input type="radio" name="valid" value="myfile"><label>Myfile_</label>
+        <input type="radio" name="valid" value="ds"><label>_DS</label><br>
+        <input type="radio" name="valid" value="abc12"><label>abc12</label>
+        <input type="radio" id="all" name="valid" value="All"><label for="all">All of the above</label>
+        <br>
     </div>
     <br>
     <br>
 
     <div>
-    <h4>
-        3) Function used to get the length of the string
-    </h4>       
-    <input type="radio" id="len" name="length" value="len"><label for="len">len()</label><br>
-    <input type="radio" id="slen" name="length" value="slen"><label for="slen">str.len()</label><br>
-    <input type="radio" id="strlen" name="length" value="strlen"><label for="strlen">strlen()</label><br>
-    <input type="radio" id="none" name="length" value="none"><label for="none">None of these</label>
-    <br>
+        <h4>
+            3) Function used to get the length of the string
+        </h4>
+        <input type="radio" id="len" name="length" value="len"><label for="len">len()</label>
+        <input type="radio" name="length" value="slen"><label>str.len()</label><br>
+        <input type="radio" name="length" value="strlen"><label>strlen()</label>
+        <input type="radio" name="length" value="none"><label>None of these</label>
+        <br>
     </div>
     <br>
     <br>
     <div>
-    <h4>
-        4) What is the special Literal below?
-    </h4>       
-    <input type="radio" id="True" name="Literal" value="True"><label for="True">True</label><br>
-    <input type="radio" id="False" name="Literal" value="False"><label for="False">False</label><br>
-    <input type="radio" id="None" name="Literal" value="None"><label for="None">None</label><br>
-    <input type="radio" id="both" name="Literal" value="both"><label for="both">Both (a) and (b)</label>
-    <br>
+        <h4>
+            4) What is the special Literal below?
+        </h4>
+        <input type="radio" name="Literal" value="True"><label>True</label>
+        <input type="radio" name="Literal" value="False"><label>False</label><br>
+        <input type="radio" id="none" name="Literal" value="None"><label for="none">None</label>
+        <input type="radio" name="Literal" value="both"><label>Both (a) and (b)</label>
+        <br>
     </div>
     <br>
     <br>
     <div>
-    <h4>
-        5) Which one of the following are advantages of Python?
-    </h4>       
-    <input type="radio" id="easy" name="adv" value="easy"><label for="easy">Easy to use OO Language</label><br>
-    <input type="radio" id="inter" name="adv" value="inter"><label for="inter">Interpreted Language</label><br>
-    <input type="radio" id="cross" name="adv" value="cross"><label for="cross">Cross-Platform Language</label><br>
-    <input type="radio" id="all" name="adv" value="all"><label for="all">All of the above</label>
-    <br>
+        <h4>
+            5) Which one of the following are advantages of Python?
+        </h4>
+        <input type="radio" name="adv" value="easy"><label>Easy to use OO Language</label>
+        <input type="radio" name="adv" value="inter"><label>Interpreted Language</label><br>
+        <input type="radio" name="adv" value="cross"><label>Cross-Platform Language</label>
+        <input type="radio" id="all2" name="adv" value="all"><label for="all2">All of the above</label>
+        <br>
     </div>
     <br>
     <br>
+
+    <div>
+        <h4>
+            6) What is a variable?
+        </h4>
+        <input type="radio" id="box" name="var" value="box"><label for="box">A box(memory location) where you store values</label>
+        <input type="radio" name="var" value="type"><label>a type of graphics</label><br>
+        <input type="radio" name="var" value="data"><label>Data type</label>
+        <input type="radio" name="var" value="memory"><label>a type of memory</label>
+        <br>
+    </div>
     <br>
-    <button type="submit" align="right">Submit</button>
+    <br>
+
+    <div>
+        <h4>
+            7) What is the word (command) used to display numbers and text on the screen?
+        </h4>
+        <input type="radio" id="print" name="display" value="print"><label for="print">print</label>
+        <input type="radio" name="display" value="input"><label>input</label><br>
+        <input type="radio" name="display" value="output"><label>output</label>
+        <input type="radio" name="display" value="command"><label>command</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            8) When you have an error in your code what is the term to summarise finding and fixing that error?
+        </h4>
+        <input type="radio" name="error" value="checking"><label>Error checking</label>
+        <input type="radio" id="debug" name="error" value="debug"><label for="debug">Debugging</label><br>
+        <input type="radio" name="error" value="find"><label>Syntax finder</label>
+        <input type="radio" name="error" value="errfind"><label>Error finder</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            9) In Python an ELSE IF statement is represented as what?
+        </h4>
+        <input type="radio" name="else" value="else1"><label>elseif</label>
+        <input type="radio" id="elif" name="else" value="else2"><label for="elif">elif</label><br>
+        <input type="radio" name="else" value="else3"><label>elsif</label>
+        <input type="radio" name="else" value="else4"><label>ifelse</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            10) IF and ELSE are used when a program needs to make a what?
+        </h4>
+        <input type="radio"  name="ifelse" value="repeat"><label for="box">Repeat</label>
+        <input type="radio" id="Decision" name="ifelse" value="decision"><label for="Decision">Decision</label><br>
+        <input type="radio" name="ifelse" value="change"><label>Change</label>
+        <input type="radio" name="ifelse" value="output"><label>Output</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <button type="button" align="right">Submit</button>
     <br>
     <br>
     <br>
@@ -136,4 +166,4 @@
     <br>
 </body>
 
-</html>					
+</html>

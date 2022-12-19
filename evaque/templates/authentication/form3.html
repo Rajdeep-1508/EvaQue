@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        EvaQue | Quiz
+
+    </title>
+    <link rel="icon" type="image/png" href="../media/favicon.png">
+    <link rel="stylesheet" href="../static/formsStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type='text/javascript'></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $('label').click(function() {
+               $('label').removeClass('worngans');
+               $(this).addClass('worngans');
+           });
+       });
+       </script>
+</head>
+
+<body>
+    <h1 class="font-effect-shadow-multiple" align="center">
+        Quiz::Professional
+    </h1>
+    <br>
+    <br>
+    <div>
+        <h4>
+            1) Which of these functions can NOT be defined under the sys module?
+
+        </h4>
+        <input type="radio" name="sys" value="argv"><label>sys.argv</label>
+        <input type="radio" id="Answer1" name="sys" value="readline"><label for="Answer1"> sys.readline</label><br>
+        <input type="radio" name="sys" value="path"><label>sys.path</label>
+        <input type="radio" name="sys" value="platform"><label>sys.platform</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            2) Which function doesn&apos;t accept any argument?
+        </h4>
+        <input type="radio" name="re" value="compile"><label>re.compile</label>
+        <input type="radio" name="re" value="findall"><label>re.findall</label><br>
+        <input type="radio" name="re" value="infile3"><label>re.match</label>
+        <input type="radio" id="Answer2" name="re" value="purge"><label for="Answer2">re.purge</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            3) In Python, the primary use of the tell() method is that:
+        </h4>
+        <input type="radio" name="tell" value="end"><label>within the file, it tells the end position</label>
+        <input type="radio" id="Answer3" name="tell" value="current"><label for="Answer3">within the file, it tells the current
+            position</label><br>
+        <input type="radio" name="tell" value="open"><label>it tells us if the file is opened</label>
+        <input type="radio" name="tell" value="None"><label>None of the above</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            4) The hasattr(obj,name) is used to:
+        </h4>
+        <input type="radio" id="Answer4" name="hasattr" value="check"><label for="Answer4">check if any specific attribute exists</label>
+        <input type="radio" name="hasattr" value="set"><label>set an attribute</label><br>
+        <input type="radio" name="hasattr" value="access"><label>access the object&apos;s attribute</label>
+        <input type="radio" name="hasattr" value="delete"><label>delete an attribute</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            5) Which function do we use to shuffle a list(say list1)?
+        </h4>
+        <input type="radio" name="list" value="shuffle1"><label>shuffle(list1)</label>
+        <input type="radio" name="list" value="shuffle2"><label>list1.shuffle()</label><br>
+        <input type="radio" name="list" value="shuffle3"><label>random.shuffleList(list1)</label>
+        <input type="radio" id="Answer5" name="list" value="shuffle4"><label for="Answer5">random.shuffle(list1)</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            6) <br>
+            &nbsp; class Count:<br>
+            &nbsp; &nbsp; def __init__(self, count=0):<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;self.__count = count<br>
+            &nbsp; &nbsp;a = Count(2)<br>
+            &nbsp; &nbsp;b = Count(2)<br>
+            &nbsp; &nbsp;print(id(a) == id(b), end='' '')<br>
+            &nbsp; &nbsp;c = ''hello''<br>
+            &nbsp; &nbsp;d = ''hello''<br>
+            &nbsp; &nbsp;print(id(c) == id(d))<br>
+
+        </h4>
+        <input type="radio" name="code3" value="TF"><label>True &nbsp; False</label>
+        <input type="radio" id="Answer6" name="code3" value="FT"><label for="Answer6">False &nbsp; True</label><br>
+        <input type="radio" name="code3" value="FF"><label>False &nbsp; False</label>
+        <input type="radio" name="code3" value="TT"><label>True &nbsp; True</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            7) Select the correct code to create a button under a parent window with command processButton.
+        </h4>
+        <input type="radio" name="command" value="Button1"><label>Button(set.text= ''Hello'' )</label>
+        <input type="radio" name="command" value="Button2"><label>Button(window ,text= ''Ok'' ,fg= ''black
+            '')</label><br>
+        <input type="radio" id="Answer7" name="command" value="Button3"><label for="Answer7">Button(window ,text= ''Hello''
+            ,command=processButton)</label>
+        <input type="radio" name="command" value="Button4"><label>Button(text= ''hello'' ,command=processButton)</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            8)<br>
+            &nbsp; &nbsp;def thrive(n):<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;if n % 15 == 0:<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; print("thrive", end= “ ”)<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;elif n % 3 != 0 and n % 5 != 0:<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; print("neither", end= “ ”)<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;elif n % 3 == 0:<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; print("three", end= “ ”)<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;elif n % 5 == 0:<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; print("five", end= “ ”)<br>
+            &nbsp; &nbsp;thrive(35)<br>
+            &nbsp; &nbsp;thrive(56)<br>
+            &nbsp; &nbsp;thrive(15)<br>
+            &nbsp; &nbsp;thrive(39)
+        </h4>
+        <input type="radio" id="Answer8" name="code4" value="Output1"><label for="Answer8">five neither thrive three</label>
+        <input type="radio" name="code4" value="Output2"><label>five neither three thrive</label><br>
+        <input type="radio" name="code4" value="Output3"><label>three three three three</label>
+        <input type="radio" name="code4" value="Output4"><label>five neither five neither</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            9) How can assertions be disabled in Python?
+        </h4>
+        <input type="radio" id="Answer9" name="assertions" value="assertions1"><label for="Answer9">Passing -O when running Python</label>
+        <input type="radio" name="assertions" value="assertions2"><label>Assertions are disabled by default</label><br>
+        <input type="radio" name="assertions" value="assertions3"><label>Both A and B are wrong</label>
+        <input type="radio" name="assertions" value="assertions4"><label>Assertions cannot be disabled in Python.</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h4>
+            10)<br>
+            &nbsp; &nbsp;word = "Python Programming"<br>
+            &nbsp; &nbsp;n = len(word)<br>
+            &nbsp; &nbsp;word1 = word.upper()<br>
+            &nbsp; &nbsp;word2 = word.lower()<br>
+            &nbsp; &nbsp;converted_word = ""<br>
+            &nbsp; &nbsp;for i in range(n):<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;if i % 2 == 0:<br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;converted_word += word2[i]<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;else:<br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;converted_word += word1[i]<br>
+            &nbsp; &nbsp;print(converted_word)
+        </h4>
+        <input type="radio" name="code5" value="Out1"><label>Python Programming</label>
+        <input type="radio" name="code5" value="Out2"><label>python programming</label><br>
+        <input type="radio" name="code5" value="Out3"><label>PYTHON PROGRAMMING</label>
+        <input type="radio" id="Answer10" name="code5" value="Out4"><label for="Answer10">pYtHoN PrOgRaMmInG</label>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <button type="button" align="right">Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

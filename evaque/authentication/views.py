@@ -62,3 +62,12 @@ def signout(request):
 
 def begForm(request):
     return render(request,"authentication/form.html")
+
+def startExamBeg(request):
+    return render(request,"authentication/before_exam.html")
+
+def startExamInt(request):
+    return render(request,"authentication/before_exam_int.html")
+
+def startExamPro(request):
+    return render(request,"authentication/before_exam_pro.html")

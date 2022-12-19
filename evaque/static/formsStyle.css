@@ -1,0 +1,100 @@
+body {
+    background-image: linear-gradient(45deg, rgb(79, 20, 131), rgb(205, 158, 142));
+}
+
+label {
+    padding-left: 40px;
+    background-color: whitesmoke;
+}
+
+input {
+    background-color: white;
+    margin-left: 40px;
+}
+
+h4 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    font-size: 1.5cm;
+    padding: 20px;
+    /* margin-right:30px;
+    margin-left: 30px; */
+    box-shadow: 0px 0px 10px black;
+    border: solid;
+    width: fit-content;
+    margin: auto;
+    background-image: linear-gradient(-55deg, rgb(179, 104, 245), rgb(205, 158, 142));
+    font-family: "Audiowide", sans-serif;
+}
+
+div {
+    background: url('img/red_transparent_background.png');
+    background: linear-gradient(30deg, rgba(65, 105, 225, 0.6), rgba(255, 229, 180, 0.6));
+    padding: 10px;
+    border: 10px;
+    width: auto;
+    font-size: 0.8cm;
+    border: solid;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]+label {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    border: 2px solid rgb(15, 13, 13);
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right:20px;
+    text-align: center;
+}
+
+input[type=radio]+label:hover {
+    border: 2px solid #5c5959;
+}
+
+input[type=radio]:checked+label {
+    background-image: none;
+    background-color: #0C0;
+    color: #fff;
+    border: 1px solid #0C0 !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.worngans {
+    background-color: #F36;
+    color: #fff;
+    border: 1px solid #F36 !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+button {
+    background-color: #010204;
+    /* Green */
+    border: outset;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 24px;
+    margin-left: 1300px;
+}
