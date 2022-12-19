@@ -19,7 +19,7 @@ def signin(request):
     data = {'page':"Login"}
     if request.method == "POST":
         username = request.POST['username']
-        #emailid = request.POST['email']
+        emailid = request.POST['email']
         pass1 = request.POST['pass1']
 
         user = authenticate(username=username,password=pass1)
