@@ -214,7 +214,7 @@ footer {
 }
 
 .about_inside p,
-h3 {
+.about_inside h3 {
   margin-left: 13px;
   color: maroon;
 }
@@ -495,52 +495,6 @@ footer {
   padding: 10px;
 }
 
-#aboutUs {
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: normal;
-  text-transform: none;
-  margin: 60px;
-  background-color: rgba(189, 187, 214, 0.9);
-  padding: 20px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 15px;
-}
-
-.about_inside {
-  background-color: white;
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 15px;
-  font-family: 'Trebuchet MS', sans-serif;
-}
-
-.about_inside h1 {
-  color: darkred;
-}
-
-.about_inside p,
-h3 {
-  margin-left: 13px;
-  color: maroon;
-}
-
-.about_inside li {
-  margin: 10px;
-  margin-left: 30px;
-
-}
-
-.about_inside h2 {
-  margin-left: 13px;
-  color: maroon;
-}
-
-.about_inside h2 a {
-  color: black;
-  text-decoration: none;
-}
-
 footer h1 a {
   color: black;
 }
@@ -637,4 +591,25 @@ button {
 label {
   font-size: 0.7cm;
   color: #6d0810;
+}
+
+#instructions{
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  padding-left: 60px;
+  font-size: larger;
+  margin: auto;
+  width: 1000px;
+}
+
+#instructions h3{
+  width: fit-content;
+}
+#instructions button{
+  width: max-content;
+  margin-left: 400px;
+  border-radius: 10px;
+}
+button:hover{
+  transform: scale(1.2);
 }
