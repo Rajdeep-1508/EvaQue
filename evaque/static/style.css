@@ -246,6 +246,312 @@ footer h1 a {
 }
 
 input[type=text],
+input[type=email],
+input[type=password] {
+  width: 450px;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and Login button on extra small screens */
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .Loginbtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.cancelbtn,
+.Loginbtn {
+  float: left;
+  width: 50%;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+body {
+  position: relative;
+  background-image: linear-gradient(45deg, rgb(104, 90, 166), rgb(255, 122, 89));
+  width: 100%;
+  height: fit-content;
+
+  font-family: "Montserrat";
+  margin: 0px;
+}
+
+nav {
+  --text-color: #fff;
+  --text-color-inverse: #000;
+  --y-offset: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  transition: all 150ms ease;
+  overflow: hidden;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--background);
+  width: 100%;
+  height: 100%;
+  transform: translateY(var(--y-offset));
+  transition: transform 150ms ease;
+  z-index: 2;
+}
+
+nav #logo {
+  width: 20%;
+  padding: 0 40px;
+  align-items: center;
+}
+
+nav #logo a {
+  text-decoration: none;
+}
+
+nav #logo img,
+#logo_footer {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  border: 1px solid black;
+}
+
+nav #navigations {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 5;
+}
+
+nav #navigations li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav #navigations li a:hover {
+  color: white;
+}
+
+nav #navigations li {
+  /* border: 2px solid white; */
+  --margin: 40px;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 0 var(--margin);
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  color: white;
+  background: orange;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 350ms ease;
+}
+
+nav ul li:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav-change {
+  --text-color: rgba(0, 0, 0, 0.8);
+  --text-color-inverse: black;
+  --background: rgba(0, 0, 0, 0.9);
+  --y-offset: 0;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+section#_1 {
+  /* background-size: cover; */
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 4px;
+  padding-top: 150px;
+}
+
+section#_1:after {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+section#_2 {
+  background: #303030;
+}
+
+section#_1 a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul li {
+    --margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    --margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  nav ul li {
+    opacity: 0;
+  }
+}
+
+.levels {
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: wheat;
+  width: 400px;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  color: #000;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+.levels h1 {
+  margin-top: 35px;
+}
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(45deg, rgb(104, 90, 166), rgb(255, 122, 89));
+  box-shadow: 2px black;
+  text-shadow: 10 px black;
+  padding: 10px;
+}
+
+#aboutUs {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 60px;
+  background-color: rgba(189, 187, 214, 0.9);
+  padding: 20px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 15px;
+}
+
+.about_inside {
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 15px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.about_inside h1 {
+  color: darkred;
+}
+
+.about_inside p,
+h3 {
+  margin-left: 13px;
+  color: maroon;
+}
+
+.about_inside li {
+  margin: 10px;
+  margin-left: 30px;
+
+}
+
+.about_inside h2 {
+  margin-left: 13px;
+  color: maroon;
+}
+
+.about_inside h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+footer h1 a {
+  color: black;
+}
+
+#Loginh1,
+#signuph1 {
+  color: #6d0810;
+  font-size: 1.2cm;
+}
+
+input[type=text],
 input[type=password],input[type=email] {
   width: 450px;
   border-radius: 15px;
